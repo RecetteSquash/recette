@@ -1,0 +1,121 @@
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.squashtest.tf.recette</groupId>
+	<artifactId>tf-automation-workflow-gherkin-cucumber</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<!-- Squash-TA framework version used by the project -->
+		<ta.cucumber.runner.version>1.0.0.RC2</ta.cucumber.runner.version>
+		<squash.root.path>squash</squash.root.path>
+	</properties>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.squashtest.ta</groupId>
+				<artifactId>squash-ta-gherkin-maven-plugin</artifactId>
+				<version>${ta.cucumber.runner.version}</version>
+				<configuration>
+					<logConfiguration>${logConfFile}</logConfiguration>
+					<featuresList>${ta.feature}</featuresList>
+					<squashRoot>${squash.root.path}</squashRoot>
+					<!-- DryRunOptions for test-list goal only. If param is false -->
+					<additionnalDryRunChecks>true</additionnalDryRunChecks>
+					<gkexporters>
+						<exporter
+							implementation="org.squashtest.ta.commons.exporter.surefire.SurefireSuiteResultExporter">
+							<jenkinsAttachmentMode>${ta.jenkins.attachment.mode}</jenkinsAttachmentMode>
+						</exporter>
+						-
+						<exporter
+							implementation="org.squashtest.ta.commons.exporter.html.HtmlSuiteResultExporter"></exporter>
+						<!-- <exporter -->
+						<!-- implementation="org.squashtest.ta.gherkin.exporter.HtmlGherkinSuiteResultExporter" 
+							/> -->
+					</gkexporters>
+
+					 <!--Define configurers-->
+					<gkconfigurers>
+						<configurer implementation="org.squashtest.ta.maven.TmCallBack">
+							<!-- TMCallBack -->
+								<endpointURL>${status.update.events.url}</endpointURL>
+								<executionExternalId>${squash.ta.external.id}</executionExternalId>
+								<jobName>${jobname}</jobName>
+								<hostName>${hostname}</hostName>
+								<endpointLoginConfFile>${squash.ta.conf.file}</endpointLoginConfFile>
+								<reportBaseUrl>${ta.tmcallback.reportbaseurl}</reportBaseUrl>
+								<jobExecutionId>${ta.tmcallback.jobexecutionid}</jobExecutionId>
+								<reportName>${ta.tmcallback.reportname}</reportName>
+							<!-- TMCallBack -->
+						</configurer>
+					</gkconfigurers>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>run</goal>
+							<goal>test-list</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+	</build>
+
+	<!-- Squash TA maven repository -->
+	<repositories>
+		 <repository>
+			 <id>org.squashtest.ta.release</id>
+			 <name>squashtest test automation - releases</name>
+			 <url>http://repo.squashtest.org/maven2/releases</url>
+			</repository>
+	</repositories>
+
+	<dependencies>	
+		<!-- optional (Ta plugin embeded). To execute without TAFramework --> 
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>4.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>4.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+
+	<!-- Squash TA maven plugin repository -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>org.squashtest.plugins.release</id>
+			<name>squashtest.org</name>
+			<url>http://repo.squashtest.org/maven2/releases</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+</project>
