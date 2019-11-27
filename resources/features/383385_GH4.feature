@@ -3,3 +3,6 @@
 # Test case importance: LOW
 # language: fr
 Fonctionnalité: GH4
+  
+  test nul
+  
