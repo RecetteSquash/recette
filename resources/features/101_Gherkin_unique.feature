@@ -10,3 +10,5 @@ Fonctionnalité: Gherkin unique
 		Etant donné que la machine est branchée.
 		Quand je passe mon badge.
 		Alors je constate que mon solde s'affiche.
+		
+  #-----------------------TEST----------------------------------------------
