@@ -1,7 +1,7 @@
 # language: en
-Feature: CTMotClé2
+Feature: BDD2
 
-	Scenario: CTMotClé2
+	Scenario: BDD2
 		Given Au revoir
 		When Bonjour
 		Then Bonjiorno

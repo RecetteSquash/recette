@@ -1,7 +1,7 @@
 # language: en
-Feature: CTMotClé1
+Feature: BDD1
 
-	Scenario: CTMotClé1
+	Scenario: BDD1
 		Given Je marche
 		When je rencontre une pierre
 		Then Je tombe
