@@ -1,7 +1,7 @@
 # language: en
-Feature: Vérifier la livraison des produits
+Feature: Vérifier la livraison des produits bis
 
-	Scenario Outline: Vérifier la livraison des produits
+	Scenario Outline: Vérifier la livraison des produits bis
 		Given la machine est en marche
 		And mon solde est au moins de <prix>.
 		When je sélectionne le <produit>.
