@@ -1,20 +1,20 @@
-# sprache: de
-Funktionalität: comprendre bdd et ne pas y arriver
+# langue: fr
+Fonctionnalité: comprendre bdd et ne pas y arriver
 
-	Szenariogrundriss: comprendre bdd et ne pas y arriver
-		Gegeben je choisis <menu>
+	Plan du scénario: comprendre bdd et ne pas y arriver
+		Étant donné que je choisis <menu>
 
 		@cracra
-		Beispiele:
+		Exemples:
 		| dessert | entree | menu | plat |
 		| "mousse choco" | "rillettes" | "C" | "burger" |
 
 		@gastro
-		Beispiele:
+		Exemples:
 		| dessert | entree | menu | plat |
 		| "macarons" | "foie gras" | "B" | "langoustines" |
 
 		@léger
-		Beispiele:
+		Exemples:
 		| dessert | entree | menu | plat |
 		| "fruits divers" | "tomate mozza" | "A" | "salade composée" |
