@@ -1,19 +1,12 @@
 # Automation priority: null
-# Automation status: TRANSMITTED
 # Test case importance: LOW
-# language: fr
-Fonctionnalité: Gherkin Yamina
-
-	# -------------------------- EXEMPLE SCENARIO 2 -------------------------- 
-	# Exemple de scénario avec table de données sans paramétrage des pas de test
-	Scénario: Vérifier les produits disponibles.
-		Etant donné que la machine est en marche.
-		Quand je liste les produits disponibles.
-		Alors je constate que tous les produits suivants sont disponibles :
-		| produit			| prix  |
+	# -------------------------- SCENARIO EXAMPLE N°2 -------------------------- 
+	# Example of a scenario with a data table but no configuration of test steps
+	Scenario: Check what products are available.
+		Given the machine is operating.
+		When I list the available products.
+		Then I notice that the following products are available :
+		| product		| price |
 		| Expresso		| 0.40  |
 		| Lungo				| 0.50  |
 		| Cappuccino	| 0.80  |
-
-  # -------------------------- Test -------------------------- 
-  # -------------------------- Test -------------------------- 
