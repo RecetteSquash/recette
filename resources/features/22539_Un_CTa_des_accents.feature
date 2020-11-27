@@ -5,7 +5,7 @@ Feature: Un CTà dès accents
 
 	Scenario: Un CTà dès accents
 		Given The machine is en marche.
-		When je read les products dipo.
+		When je read les products dipo @ù!!?^^
 		Then je constate que tous produits suivants sont dispo :
 			| produit | prix |
 			| Expresso | 0.40 |
