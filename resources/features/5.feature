@@ -1,19 +1,11 @@
-# Automation priority: 15
-# Automation status: TRANSMITTED
-# Test case importance: LOW
+# Automation priority: null
+# Test case importance: HIGH
 # language: fr
-Fonctionnalité: NXQLX139
-  
-	# -------------------------- EXEMPLE SCENARIO 3 -------------------------- 
-	# Exemple de scénario avec table de données et paramétrage des pas de test
-	# A l'exécution, les valeurs de paramètres entre <> seront substituées
-	# Le scénario sera joué une fois pour chaque jeu de données
-	Plan du Scénario: Vérifier la livraison des produits.
+Fonctionnalité: cas5_gherkin
+  Scénario: Vérifier les produits disponibles.
 		Etant donné que la machine est en marche.
-		Et que mon solde est au moins de <prix>.
-		Quand je sélectionne le <produit>.
-		Alors la machine me sert un <produit> et mon compte est débité de <prix>.
-		Exemples:
+		Quand je liste les produits disponibles.
+		Alors je constate que tous les produits suivants sont disponibles :
 		| produit			| prix  |
 		| Expresso		| 0.40  |
 		| Lungo				| 0.50  |
