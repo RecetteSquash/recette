@@ -1,5 +1,5 @@
 # Automation priority: null
-# Test case importance: LOW
+# Test case importance: MEDIUM
 # language: fr
 Fonctionnalité: CT_Gherkin
   
