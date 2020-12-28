@@ -1,9 +1,13 @@
 # Automation priority: null
-# Automation status: TRANSMITTED
-# Test case importance: LOW
-# language: fr
-Fonctionnalité: [01-test multi]
-  Scénario: Vérifier que la machine est disponible.
-		Etant donné que la machine est branchée.
-		Quand je passe mon badge.
-		Alors je constate que mon solde s'affiche.
+# Test case importance: Low
+# language: en
+Feature: Vérifier les produits disponibles.
+
+	Scenario: Vérifier les produits disponibles.
+		Given la machine est "branchée"
+		When je liste les produits disponibles.
+		Then je constate que tous les produits suivants sont disponibles :
+			| produit			| prix  |
+			| Expresso		| 0.40  |
+			| Lungo				| 0.50  |
+			| Cappuccino	| 0.80  |
