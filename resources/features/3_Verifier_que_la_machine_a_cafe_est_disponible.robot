@@ -1,4 +1,4 @@
-# Automation priority: null
+# Automation priority: 10
 # Test case importance: Very high
 *** Settings ***
 Resource	squash_resources.resource
@@ -21,4 +21,4 @@ Vérifier que la machine à café est disponible
 	When je passe ${mon_badge}
 	Then je constate qu'un message s'affiche "${docstring_1}"
 	And je constate que tous les produits suivants sont disponibles : "${datatable_1}"
-	# Le message s'affiche au-dessus de la liste des produits.
+	# La liste des produits s'affiche sous le message.
