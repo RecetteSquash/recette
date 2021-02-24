@@ -1,5 +1,4 @@
 # Automation priority: 45
-# Automation status: TRANSMITTED
 # Test case importance: LOW
 # language: fr
 Fonctionnalité: atteinte état final
