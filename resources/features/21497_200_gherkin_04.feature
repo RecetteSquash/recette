@@ -1,4 +1,4 @@
-# Automation priority: null
+# Automation priority: 10
 # Test case importance: LOW
 # language: fr
 Fonctionnalité: 200.gherkin 04
