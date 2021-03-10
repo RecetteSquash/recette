@@ -1,5 +1,4 @@
 # Automation priority: 999999999
-# Automation status: TRANSMITTED
 # Test case importance: LOW
 # language: fr
 Fonctionnalité: modification d'un cdt gherkin
