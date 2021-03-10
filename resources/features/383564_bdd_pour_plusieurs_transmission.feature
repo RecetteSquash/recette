@@ -1,5 +1,5 @@
 # Automation priority: 2
-# Test case importance: Low
+# Test case importance: Very high
 # language: en
 Feature: bdd pour plusieurs transmission
 
@@ -7,6 +7,7 @@ Feature: bdd pour plusieurs transmission
 		Given je vais au marché
 		When j'achète <produit>
 		Then je peux faire <action>
+		Then Je suis satisfaite du résultat
 
 		@jdd1
 		Examples:
