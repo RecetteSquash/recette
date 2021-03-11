@@ -12,6 +12,9 @@ Feature: Vérifier les produits disponibles 7
 			"""
 			doctring pas 1
 			"""
+			#comm1
+			#comm2
+			#comm3
 		When je liste les produits disponibles.
 			| type| produit|
 			| café| expresso |
@@ -30,3 +33,4 @@ Feature: Vérifier les produits disponibles 7
 			"""
 			le prix des produits s'affiche à droite sur l'écran et le nom des produits à gauche
 			"""
+			#| café| expresso || café| expresso || café| expresso || café| expresso || café| expresso || café| expresso |
