@@ -10,6 +10,9 @@ Vérifier les produits disponibles/2
 	${docstring_3} =	Set Variable	le prix des produits s'affiche à droite sur l'écran et le nom des produits à gauche
 
 	Given la machine est en marche. "${docstring_1}"
+	# La mise en forme du texte est définie ici.
+	# 
+	# Selon le badge passé, la mise en forme est différente
 	When je liste les produits disponibles "${docstring_2}"
 	# Seuls les produits de la catégorie Café sont vérifiés dans ce test.
 	Then je constate que tous les produits suivants sont disponibles : "${docstring_3}"
