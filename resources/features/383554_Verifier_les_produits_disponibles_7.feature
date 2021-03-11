@@ -12,4 +12,6 @@ Feature: Vérifier les produits disponibles 7
 			 | Expresso        | 0.40  |
 			 | Lungo              | 0.50  |
 			 | Cappuccino    | 0.80  |
-			# le prix des produits s'affiche à droite sur l'écran et le nom des produits à gauche
+			"""
+			le prix des produits s'affiche à droite sur l'écran et le nom des produits à gauche
+			"""
