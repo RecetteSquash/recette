@@ -9,12 +9,18 @@ Feature: Vérifier les produits disponibles 7
 			| Éco| faible |
 			| Normal| normal |
 			| Full| intense|
+			"""
+			doctring pas 1
+			"""
 		When je liste les produits disponibles.
 			| type| produit|
 			| café| expresso |
 			| café| double|
 			| autre| thé|
 			| autre| potage|
+			"""
+			docstring pas 2
+			"""
 			#Seuls les produits de la catégorie Café sont vérifiés dans ce test
 		Then je constate que tous les produits suivants sont disponibles :
 			 | produit            | prix |
