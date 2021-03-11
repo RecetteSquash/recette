@@ -5,7 +5,16 @@ Feature: Vérifier les produits disponibles 7
 
 	Scenario: Vérifier les produits disponibles 7
 		Given la machine est en marche.
+			| mode| luminosité |
+			| Éco| faible |
+			| Normal| normal |
+			| Full| intense|
 		When je liste les produits disponibles.
+			| type| produit|
+			| café| expresso |
+			| café| double|
+			| autre| thé|
+			| autre| potage|
 			#Seuls les produits de la catégorie Café sont vérifiés dans ce test
 		Then je constate que tous les produits suivants sont disponibles :
 			 | produit            | prix |
