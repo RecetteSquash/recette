@@ -1,4 +1,4 @@
 # Automation priority: null
 # Test case importance: LOW
 # language: fr
-Fonctionnalité: GHERKIN 1 transmission
+Fonctionnalité: gherkin 02
