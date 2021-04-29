@@ -5,6 +5,6 @@ Fonctionnalité: CasG1
   
   
   Scénario: 
-    Soit CasG1
-    Quand quelquechose
-    Alors autrechose
+    Soit CasG1 modifié
+    Quand quelquechose de différent
+    Alors autrechose de différent
