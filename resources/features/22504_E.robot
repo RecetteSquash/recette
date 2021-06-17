@@ -4,8 +4,8 @@
 Resource	squash_resources.resource
 
 *** Test Cases ***
-CT BDD
-	Given "un_objet" s'il vous plait beaucoup
+E
 	When "langage." #Léé±® "Nerd" avec un peu de texte
 	Given J'ai "nombre" pommes
-	Given action
+	Given "un_objet" s'il vous plait beaucoup
+	Given "des_objets" s'il vous plait beaucoup
