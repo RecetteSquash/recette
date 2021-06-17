@@ -1,7 +1,9 @@
-# Priorité d'automatisation: null
-# Importance du cas de test: Faible
-# language: fr
-Fonctionnalité: BDD03
+# Automation priority: null
+# Test case importance: Low
+# language: en
+Feature: BDD03
 
-	Scénario: BDD03
-		Quand Action Robot
+	Scenario: BDD03
+		When Action Robot
+		Given Action Robot2
+		Given Action Robot2
