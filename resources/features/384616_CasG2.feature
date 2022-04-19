@@ -1,4 +1,4 @@
-# Automation priority: null
+# Automation priority: 111
 # Test case importance: LOW
 # language: fr
 Fonctionnalité: CasG2
