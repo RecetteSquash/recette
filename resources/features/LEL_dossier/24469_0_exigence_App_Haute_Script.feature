@@ -1,4 +1,4 @@
-# Automation priority: null
+# Automation priority: 1
 # Test case importance: HIGH
 # language: fr
 Fonctionnalité: Cas 1 bis
