@@ -4,6 +4,6 @@
 Fonctionnalité: Transmission nouvelle
   
   Scénario: 
-    Soit 
+    Soit un projet jira
     Quand 
     Alors 
