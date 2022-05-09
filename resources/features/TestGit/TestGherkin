@@ -1,0 +1,4 @@
+  Scénario: mon scenario
+    Soit etat des lieux
+    Quand action1
+    Alors resultat1
