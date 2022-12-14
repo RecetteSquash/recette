@@ -1,4 +1,4 @@
-# Automation priority: 4
-# Test case importance: Low
-# language: en
-Feature: BDD1-5585
+# Priorité d'automatisation: 4
+# Importance du cas de test: Faible
+# language: fr
+Fonctionnalité: BDD1-5585
