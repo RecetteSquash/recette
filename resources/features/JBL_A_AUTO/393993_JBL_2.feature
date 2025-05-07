@@ -1,7 +1,7 @@
 # language: en
-Feature: BDD 2
+Feature: JBL_2
 
-	Scenario Outline: BDD 2
+	Scenario Outline: JBL_2
 		Given la machine est en marche.
 		And mon solde est au moins de <prix>.
 		When je sélectionne le <produit>.
